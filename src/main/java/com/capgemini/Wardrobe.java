@@ -64,7 +64,7 @@ public class Wardrobe implements IWardrobe {
             repairDoor();
             kickWardrobe();
         } else if (oneFromTen == 4 || oneFromTen == 5) {
-            System.out.println("\033[31;1mThe maid found you.");
+            System.out.println("\033[91;1mThe maid found you.");
             System.out.println("You'll get a 10 seconds timeout\033[0m.");
             System.out.println("----------");
             try {
