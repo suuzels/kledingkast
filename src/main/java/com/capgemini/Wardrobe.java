@@ -54,7 +54,7 @@ public class Wardrobe implements IWardrobe {
 
     // Main methode
     public void kickWardrobe() {
-        System.out.println("You kicked the door really hard.");
+        System.out.println("\033[32;1;2mYou kicked the door really hard.\033[0m");
         System.out.println("----------");
         double oneFromTen = Math.floor((Math.random() * 10) + 1);
         if (oneFromTen >= 1 && oneFromTen <= 3) {
@@ -64,8 +64,8 @@ public class Wardrobe implements IWardrobe {
             repairDoor();
             kickWardrobe();
         } else if (oneFromTen == 4 || oneFromTen == 5) {
-            System.out.println("The maid found you.");
-            System.out.println("You'll get a 10 seconds timeout.");
+            System.out.println("\033[31;1mThe maid found you.");
+            System.out.println("You'll get a 10 seconds timeout\033[0m.");
             System.out.println("----------");
             try {
                 Thread.sleep(100);
@@ -114,7 +114,7 @@ public class Wardrobe implements IWardrobe {
 
     // This method should be started in 10% of the cases in which you hide in the wardrobe.
     public void goToNarnia() {
-        System.out.println("You arrived in Narnia.");
+        System.out.println("\033[94;1mYou arrived in Narnia.\033[0m");
         System.out.println("----------");
         System.out.println("You will go to the witch.");
         System.out.println("----------");
@@ -145,7 +145,7 @@ public class Wardrobe implements IWardrobe {
     // This method can only be started when the white which is defeated.
     public void talkToAslan() {
         System.out.println("What's up Aslan!");
-        System.out.println("\n" +
+        System.out.println("\033[95;1m\n" +
                 "                                                ,w.\n" +
                 "                                              ,YWMMw  ,M  ,\n" +
                 "                         _.---.._   __..---._.'MMMMMw,wMWmW,\n" +
@@ -160,7 +160,7 @@ public class Wardrobe implements IWardrobe {
                 "           /  .'             /  (       .'  /     Ww._     `.  `\"\n" +
                 "          /  Y,              `,  `-,=,_{   ;      MMMP`\"\"-,  `-._.-,\n" +
                 " fsc     (--, )                `,_ / `) \\/\"\")      ^\"      `-, -;\"\\:\n" +
-                "          `\"\"\"                    `\"\"\"   `\"'                  `---\" ");
+                "          `\"\"\"                    `\"\"\"   `\"'                  `---\" \033[0m");
         System.out.println("----------");
         System.out.println("░░█▀░░░░░░░░░░░▀▀███████░░░░ \n" +
                 "░░█▌░░░░░░░░░░░░░░░▀██████░░░ \n" +
