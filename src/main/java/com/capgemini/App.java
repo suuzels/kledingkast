@@ -30,6 +30,8 @@ public class App
         wardrobeItems.add(socks);
         wardrobeItems.add(socks);
         wardrobeItems.add(socks);
+        wardrobeItems.add(socks);
+        wardrobeItems.add(socks);
 
         // Methodes from Wardrobe.
         dombas.kickWardrobe();
